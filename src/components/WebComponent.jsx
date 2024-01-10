@@ -159,7 +159,7 @@ const WebComponent = () => {
                 <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerDays}
                 </p>
-                <p className="max-sm:text-sm">days</p>
+                <p className="max-sm:text-xs">days</p>
               </div>
 
               <span className="m-[30px_0px]">
@@ -171,7 +171,7 @@ const WebComponent = () => {
                 <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerHours}
                 </p>
-                <p className="max-sm:text-sm">hours</p>
+                <p className="max-sm:text-xs">hours</p>
               </div>
 
               <span className="m-[30px_0px]">
@@ -183,7 +183,7 @@ const WebComponent = () => {
                 <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerMinutes}
                 </p>
-                <p className="max-sm:text-sm">minutes</p>
+                <p className="max-sm:text-xs">mins</p>
               </div>
 
               <span className="m-[30px_0px]">
@@ -195,13 +195,13 @@ const WebComponent = () => {
                 <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerSeconds}
                 </p>
-                <p className="max-sm:text-sm">seconds</p>
+                <p className="max-sm:text-xs">secs</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="text-center text-lg max-sm:text-[1rem] m-5 text-white">
+        <div className="text-center text-lg max-sm:text-[0.8rem] m-5 text-white">
           <p>
             Total supply:{" "}
             <span className="text-[#e2c67a]">1,000,000,000 SEIV</span>
@@ -214,7 +214,7 @@ const WebComponent = () => {
       <div className="text-center text-white m-7">
         <div className="flex-row justify-center">
           <h2 className="text-2xl max-sm:text-xl m-2">Contract</h2>
-          <div className="contra bg-black border border-yellow-100 rounded-xl mx-[500px] max-sm:mx-[30px] shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+          <div className="contra bg-black border border-yellow-100 rounded-xl mx-[500px] max-sm:mx-[25px] shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
             <input
               type="text"
               name="contract"
@@ -226,7 +226,7 @@ const WebComponent = () => {
             ></input>
             <button
               type="button"
-              className=""
+              className="hover:w-5"
               title="Copy contract address"
               onClick={copyToClipboard}
             >
