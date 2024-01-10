@@ -48,6 +48,7 @@ const WebComponent = () => {
   // const minutes = 30;
   // const seconds = 45;
 
+  const [isCopied, setIsCopied] = useState(false);
   const copyToClipboard = () => {
     const contractInput = document.getElementById("contract");
 
@@ -57,6 +58,11 @@ const WebComponent = () => {
       contractInput.select();
       contractInput.setSelectionRange(0, 99999);
       document.execCommand("copy");
+      setIsCopied(true);
+
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 500);
     }
   };
 
@@ -94,7 +100,7 @@ const WebComponent = () => {
       </header>
 
       {/*Hero*/}
-      <div>
+      <div className="">
         <div className="">
           <div className="flex justify-center">
             <img
@@ -214,7 +220,7 @@ const WebComponent = () => {
       <div className="text-center text-white m-7">
         <div className="flex-row justify-center">
           <h2 className="text-2xl max-sm:text-xl m-2">Contract</h2>
-          <div className="contra bg-black border border-yellow-100 rounded-xl mx-[500px] max-sm:mx-[25px] shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+          <div className="contra bg-black border border-yellow-100 rounded-xl mx-[500px] max-sm:mx-[20px] shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
             <input
               type="text"
               name="contract"
@@ -226,10 +232,24 @@ const WebComponent = () => {
             ></input>
             <button
               type="button"
-              className="hover:w-5"
-              title="Copy contract address"
+              className=""
+              title={isCopied ? "Copied!" : "Copy contract address"}
               onClick={copyToClipboard}
             >
+            {isCopied ? "Copied!" : (
+              <svg
+                width="14"
+                height="16"
+                viewBox="0 0 14 16"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+              <path data-name="layer1" d="M53.443 32A26.002 26.002 0 1 1 27.75 10a25.914 25.914 0 0 1 10 1.993"
+              fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+              stroke-linecap="round"></path>
+              </svg>
+              
+            )}
               <svg
                 width="14"
                 height="16"

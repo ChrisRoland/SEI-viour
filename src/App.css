@@ -33,6 +33,11 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
+.main {
+  background-image: linear-gradient(#b1afaf 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #b1afaf calc(100% - 0.5px)), linear-gradient(90deg, #b1afaf 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #b1afaf calc(100% - 0.5px));
+  background-size: 1.6666666666666667% 2%;
+  border: 0.5px solid #b1afaf;
+}
 
 div.trans, div.trans > *, div.trans > * > *, div.trans > * > * > * {
   background: transparent;
