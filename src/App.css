@@ -28,17 +28,17 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  /* z-index: 2; */
   background: #780000;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 
-div.trans, div.trans > *, div.trans > * > *, div.trans > * > * > *  {
+div.trans, div.trans > *, div.trans > * > *, div.trans > * > * > * {
   background: transparent;
 }
 
-div.contra, div.contra > *, div.contra > * > *{
+div.contra, div.contra > *, div.contra > * > * {
   background: black;
 }
 

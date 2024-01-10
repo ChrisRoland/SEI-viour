@@ -64,58 +64,79 @@ const WebComponent = () => {
     <div className="text-white">
       <header className=" ">
         {/* Header Section*/}
-        <div className="nav mb-10">
-          <div className="flex items-center bg-inherit">
+        <div className="nav mb-10 max-sm:flex max-sm:justify-center">
+          <div className="flex items-center bg-inherit ">
             <img
               src={Logo}
               alt="Seiviour logo"
-              className="w-[60px] hover:w-[65px] ease-in-out duration-300 rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+              className="w-[60px] max-sm:w-[40px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
             ></img>
-            <h1 className="bg-inherit text-white text-4xl px-2">SEIviour</h1>
+            <h1 className="bg-inherit text-white text-4xl max-sm:text-3xl px-2">SEIviour</h1>
           </div>
-          <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-            <a href="/register" className="bg-inherit ">
-              Buy
-            </a>
-          </div>
-          <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[130px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-            <a href="/register" className="bg-inherit ">
-              Airdrop
-            </a>
-          </div>
-          <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-            <a href="/register" className="bg-inherit ">
-              NFTS
-            </a>
+          <div className="flex gap-16 bg-inherit max-sm:hidden">
+            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <a href="/register" className="bg-inherit ">
+                Buy
+              </a>
+            </div>
+            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <a href="/register" className="bg-inherit ">
+                Airdrop
+              </a>
+            </div>
+            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <a href="/register" className="bg-inherit ">
+                NFTS
+              </a>
+            </div>
           </div>
         </div>
       </header>
 
       {/*Hero*/}
       <div>
-        <div className="flex-row justify-center">
+        <div className="">
           <div className="flex justify-center">
             <img
               src={Badge}
               alt="Seiviour Logo"
-              className="w-[350px] h-[350px] max-sm:w-[200px] max-sm:h-[200px] mt-[110px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+              className="w-[300px] h-[300px] max-sm:w-[200px] max-sm:h-[200px] mt-[110px] max-sm:mt-[100px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
             ></img>
           </div>
-          <p className="w-[55%] m-[50px_auto_15px_auto] text-white text-xl max-sm:text-lg text-center font-bold tracking-wide leading-7 ">
-            <span className="text-[#e2c67a]">SEIviour token</span> is a
-            revolutionary force in the crypto space, seamlessly integrating
-            cutting-edge blockchain technology with traditional finance
-            services. Our mission is to elevate the utility of crypto assets,
-            providing a robust platform for users to engage with the next wave
-            of financial innovation. Join us on the journey towards a
-            decentralized future, where{" "}
-            <span className="text-[#e2c67a]">SEIviour</span> empowers
-            individuals with secure, efficient, and scalable solutions.
-            Experience the evolution of finance –{" "}
-            <span className="text-[#e2c67a]">
-              welcome to the SEIviour revolution.
-            </span>
-          </p>
+          <div className="flex justify-center mt-5 gap-3 bg-inherit lg:hidden">
+            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[70px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <a href="/register" className="bg-inherit ">
+                Buy
+              </a>
+            </div>
+            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[95px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <a href="/register" className="bg-inherit ">
+                Airdrop
+              </a>
+            </div>
+            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[70px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <a href="/register" className="bg-inherit ">
+                NFTS
+              </a>
+            </div>
+          </div>
+          <div className="flex justify-center m-5">
+            <p className="w-[55%] max-sm:w-auto max-sm:px-2 text-white text-xl max-sm:text-lg text-center font-bold tracking-wide leading-7 ">
+              <span className="text-[#e2c67a]">SEIviour token</span> is a
+              revolutionary force in the crypto space, seamlessly integrating
+              cutting-edge blockchain technology with traditional finance
+              services. Our mission is to elevate the utility of crypto assets,
+              providing a robust platform for users to engage with the next wave
+              of financial innovation. Join us on the journey towards a
+              decentralized future, where{" "}
+              <span className="text-[#e2c67a]">SEIviour</span> empowers
+              individuals with secure, efficient, and scalable solutions.
+              Experience the evolution of finance –{" "}
+              <span className="text-[#e2c67a]">
+                welcome to the SEIviour revolution.
+              </span>
+            </p>
+          </div>
         </div>
         <div className="flex justify-center m-10">
           <div className="flex w-[8rem] justify-between">
@@ -127,63 +148,63 @@ const WebComponent = () => {
       </div>
 
       {/*countdown*/}
-      <div className="w-[70%] border-[1px] border-yellow-100 rounded-[12px] m-[0px_auto_40px_auto] p-[20px]">
+      <div className="w-[70%] max-sm:w-[90%] border-[1px] border-yellow-100 rounded-[12px] m-[0px_auto_40px_auto] p-[20px]">
         <div className="flex justify-center bg-gradient-to-b from-red-600 to-yellow-300 shadow-[0px_4px_4px_rgba(0, 0, 0, 0.25)] shadow-black rounded-[20px]">
-          <div className="trans w-[60%] p-[30px] text-white">
+          <div className="trans w-[60%] p-[30px] max-sm:w-[80%] max-sm:px-[0px] text-white">
             <p className="font-semibold text-2xl leading-8 text-center mb-2">
               Presale Starts in
             </p>
             <div className="flex text-white justify-between">
-              <div className="border-[1px] border-white rounded w-[20%] text-center">
-                <p className="font-semibold text-[30px] text-center m-[2px]">
+              <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
+                <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerDays}
                 </p>
-                <p className="day">days</p>
+                <p className="max-sm:text-sm">days</p>
               </div>
 
               <span className="m-[30px_0px]">
-                <hr className="w-[12px] h-[12px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
-                <hr className="w-[12px] h-[12px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
+                <hr className="w-[12px] h-[12px] max-sm:w-[10px] max-sm:h-[10px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
+                <hr className="w-[12px] h-[12px] max-sm:w-[10px] max-sm:h-[10px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
               </span>
 
-              <div className="border-[1px] border-white rounded w-[20%] text-center">
-                <p className="font-semibold text-[30px] text-center m-[2px]">
+              <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
+                <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerHours}
                 </p>
-                <p className="day">hours</p>
+                <p className="max-sm:text-sm">hours</p>
               </div>
 
               <span className="m-[30px_0px]">
-                <hr className="w-[12px] h-[12px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
-                <hr className="w-[12px] h-[12px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
+                <hr className="w-[12px] h-[12px] max-sm:w-[10px] max-sm:h-[10px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
+                <hr className="w-[12px] h-[12px] max-sm:w-[10px] max-sm:h-[10px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
               </span>
 
-              <div className="border-[1px] border-white rounded w-[20%] text-center">
-                <p className="font-semibold text-[30px] text-center m-[2px]">
+              <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
+                <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerMinutes}
                 </p>
-                <p className="day">minutes</p>
+                <p className="max-sm:text-sm">minutes</p>
               </div>
 
               <span className="m-[30px_0px]">
-                <hr className="w-[12px] h-[12px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
-                <hr className="w-[12px] h-[12px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
+                <hr className="w-[12px] h-[12px] max-sm:w-[10px] max-sm:h-[10px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
+                <hr className="w-[12px] h-[12px] max-sm:w-[10px] max-sm:h-[10px] rounded-[50%] bg-[#F6C745] border-2 border-red-700 m-[6px_0]" />
               </span>
 
-              <div className="border-[1px] border-white rounded w-[20%] text-center">
-                <p className="font-semibold text-[30px] text-center m-[2px]">
+              <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
+                <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerSeconds}
                 </p>
-                <p className="day">seconds</p>
+                <p className="max-sm:text-sm">seconds</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="text-center text-lg m-5 text-white">
+        <div className="text-center text-lg max-sm:text-[1rem] m-5 text-white">
           <p>
             Total supply:{" "}
-            <span className="text-[#e2c67a]">1,000,000,000 SEIVR</span>
+            <span className="text-[#e2c67a]">1,000,000,000 SEIV</span>
           </p>
           <p>0 Taxes, 0 Team Allocation, 0 Presale, 0 BS</p>
         </div>
@@ -192,16 +213,16 @@ const WebComponent = () => {
       {/*Contract*/}
       <div className="text-center text-white m-7">
         <div className="flex-row justify-center">
-          <h2 className="text-2xl m-2">Contract</h2>
-          <div className="contra bg-black border border-yellow-100 rounded-xl mx-[500px] shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+          <h2 className="text-2xl max-sm:text-xl m-2">Contract</h2>
+          <div className="contra bg-black border border-yellow-100 rounded-xl mx-[500px] max-sm:mx-[30px] shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
             <input
               type="text"
               name="contract"
               id="contract"
               readonly=""
               aria-readonly="true"
-              className="p-3 focus:outline-none"
-              value="factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja"
+              className="p-3 focus:outline-none text-center"
+              value="factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/seiviour"
             ></input>
             <button
               type="button"
@@ -225,7 +246,7 @@ const WebComponent = () => {
 
       {/*Buy Links */}
       <div className="text-center m-10">
-        <div class="">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <a
             target="_blank"
             rel="noreferrer"
