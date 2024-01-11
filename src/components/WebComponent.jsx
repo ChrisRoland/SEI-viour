@@ -73,6 +73,7 @@ const WebComponent = () => {
       <header className="">
         {/* Header Section*/}
         <div className="nav mb-10 max-sm:flex max-sm:justify-center">
+        <a href="https://seiviour.xyz" className="bg-inherit ">
           <div className="flex items-center bg-inherit ">
             <img
               src={Logo}
@@ -83,6 +84,7 @@ const WebComponent = () => {
               SEIviour
             </h1>
           </div>
+          </a>
           <div className="flex gap-16 bg-inherit max-sm:hidden">
             <ScrollLink
               to="links"
