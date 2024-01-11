@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link } from 'react-router-dom';
 import Logo from "../assets/Seiviour.svg";
 import Badge from "../assets/bbb.jpeg";
 
@@ -68,8 +69,8 @@ const WebComponent = () => {
   };
 
   return (
-    <div className="text-white">
-      <header className=" ">
+    <div className="text-white main">
+      <header className="">
         {/* Header Section*/}
         <div className="nav mb-10 max-sm:flex max-sm:justify-center">
           <div className="flex items-center bg-inherit ">
@@ -96,9 +97,9 @@ const WebComponent = () => {
               </div>
             </ScrollLink>
             <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[150px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <a href="/register" className="bg-inherit ">
+            <Link to="/About" className="bg-inherit">
                 About
-              </a>
+            </Link>
             </div>
             {/*
             <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
@@ -120,7 +121,7 @@ const WebComponent = () => {
               className="w-[300px] h-[300px] max-sm:w-[200px] max-sm:h-[200px] mt-[110px] max-sm:mt-[100px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
             ></img>
           </div>
-          <div className="flex justify-center mt-5 gap-3 bg-inherit lg:hidden">
+          <div className="flex justify-center mt-5 gap-3 bg-inherit md:hidden lg:hidden">
           <ScrollLink
               to="links"
               smooth={true}
@@ -134,7 +135,7 @@ const WebComponent = () => {
             </div>
             </ScrollLink>
             <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <a href="/register" className="bg-inherit ">
+              <a href="" className="bg-inherit ">
                 About
               </a>
             </div>
@@ -147,7 +148,7 @@ const WebComponent = () => {
           </div>
           <div className="flex justify-center m-5">
             <p className="w-[55%] max-sm:w-auto max-sm:px-2 text-white text-xl max-sm:text-lg text-center font-bold tracking-wide leading-7 ">
-              <span className="text-[#e2c67a]">SEIviour token</span> is where crypto meets divine hilarity! Embrace the spirit of the DEIciples and join the crypto-revolution with a touch of heavenly humor. Our mission? To turn water into coin, multiply your assets, and spread joy in every transaction. This is the place miracles of crypto meet the chuckles of believers. Walk the digital path with us and witness the laughter-worthy wonders of decentralized finance, where heaven and hodl collide! - <span className="text-[#e2c67a]">
+              <span className="text-[#e2c67a]">SEIviour token</span> is where crypto meets divine hilarity! Embrace the spirit of the DiSEIples and join the crypto-revolution with a touch of heavenly humor. Our mission? To turn water into coin, multiply your assets, and spread joy in every transaction. This is the place miracles of crypto meet the chuckles of believers. Walk the digital path with us and witness the laughter-worthy wonders of decentralized finance, where heaven and hodl collide! - <span className="text-[#e2c67a]">
                 Come! And be SEIved.
               </span>
             </p>
