@@ -9,14 +9,18 @@ const About = () => {
       <header className="">
         <div className="nav mb-10 max-sm:flex max-sm:justify-center">
           <div className="flex items-center ">
-            <img
-              src={Logo}
-              alt="Seiviour logo"
-              className="w-[60px] max-sm:w-[40px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
-            ></img>
+            <a href="https://seiviour.xyz" className="bg-inherit ">
+              <img
+                src={Logo}
+                alt="Seiviour logo"
+                className="w-[60px] max-sm:w-[40px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+              ></img>
+              </a>
+              <a href="https://seiviour.xyz" className="bg-inherit ">
             <h1 className="bg-inherit text-white text-4xl max-sm:text-3xl px-2">
               SEIviour
             </h1>
+            </a>
           </div>
           <div className="flex gap-16 bg-inherit max-sm:hidden">
             <ScrollLink
@@ -54,7 +58,7 @@ const About = () => {
               <img
                 src={Dinner}
                 alt="Seiviour Logo"
-                className="w-[800px] h-[300px] max-sm:w-[300px] max-sm:h-[150px] mt-[110px] max-sm:mt-[100px] rounded-xl overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+                className="w-[800px] h-[300px] max-sm:w-[300px] max-sm:h-[150px] mt-[150px] max-sm:mt-[100px] rounded-xl overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
               ></img>
             </div>
 
@@ -72,8 +76,8 @@ const About = () => {
                 </div>
               </ScrollLink>
               <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <a href="/About" className="bg-inherit ">
-                  About
+                <a href="https://seiviour.xyz" className="bg-inherit ">
+                  Home
                 </a>
               </div>
               {/*
