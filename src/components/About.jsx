@@ -74,7 +74,7 @@ const About = () => {
                 </div>
               </ScrollLink>
               <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <a href="" className="bg-inherit ">
+                <a href="/About" className="bg-inherit ">
                   About
                 </a>
               </div>

@@ -60,13 +60,11 @@ div.contra, div.contra > *, div.contra > * > * {
 } */
 
 
-/* @media only screen and (max-width: 767px) {
-  body {
-    background-image: linear-gradient(#969696 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #969696 calc(100% - 0.5px)), linear-gradient(90deg, #969696 0.5px, transparent 0.5px, transparent calc(100% - 0.5px), #969696 calc(100% - 0.5px));
-  background-size: 2.7027027027027026% 2.7777777777777777%;
-  border: 0.5px solid #969696;
+@media only screen and (max-width: 767px) {
+  #root {
+    background: none;
   }
-} */
+}
 
 
 /* code {
