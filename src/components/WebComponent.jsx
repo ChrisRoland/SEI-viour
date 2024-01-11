@@ -145,18 +145,8 @@ const WebComponent = () => {
           </div>
           <div className="flex justify-center m-5">
             <p className="w-[55%] max-sm:w-auto max-sm:px-2 text-white text-xl max-sm:text-lg text-center font-bold tracking-wide leading-7 ">
-              <span className="text-[#e2c67a]">SEIviour token</span> is a
-              revolutionary force in the crypto space, seamlessly integrating
-              cutting-edge blockchain technology with traditional finance
-              services. Our mission is to elevate the utility of crypto assets,
-              providing a robust platform for users to engage with the next wave
-              of financial innovation. Join us on the journey towards a
-              decentralized future, where{" "}
-              <span className="text-[#e2c67a]">SEIviour</span> empowers
-              individuals with secure, efficient, and scalable solutions.
-              Experience the evolution of finance –{" "}
-              <span className="text-[#e2c67a]">
-                welcome to the SEIviour revolution.
+              <span className="text-[#e2c67a]">SEIviour token</span> is where crypto meets divine hilarity! Embrace the spirit of the DEIciples and join the crypto-revolution with a touch of heavenly humor. Our mission? To turn water into blockchain, multiply your assets, and spread joy in every transaction. This is the place miracles of crypto meet the chuckles of believers. Walk the digital path with us and witness the laughter-worthy wonders of decentralized finance, where heaven and hodl collide! - <span className="text-[#e2c67a]">
+                Come! And be SEIved.
               </span>
             </p>
           </div>
