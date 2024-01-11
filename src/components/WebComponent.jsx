@@ -86,7 +86,7 @@ const WebComponent = () => {
             <ScrollLink
               to="links"
               smooth={true}
-              duration={500}
+              duration={900}
               className="bg-inherit"
             >
               <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[200px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
@@ -120,11 +120,18 @@ const WebComponent = () => {
             ></img>
           </div>
           <div className="flex justify-center mt-5 gap-3 bg-inherit lg:hidden">
+          <ScrollLink
+              to="links"
+              smooth={true}
+              duration={900}
+              className="bg-inherit"
+            >
             <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <a href="#links" className="bg-inherit ">
+              <a href="" className="bg-inherit ">
                 Buy
               </a>
             </div>
+            </ScrollLink>
             {/* <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[95px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
               <a href="/register" className="bg-inherit ">
                 Airdrop
