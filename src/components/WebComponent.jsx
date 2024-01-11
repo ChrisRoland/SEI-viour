@@ -13,7 +13,7 @@ const WebComponent = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countDownDate = new Date("Jan 16, 2024 11:40:00").getTime();
+    const countDownDate = new Date("Jan 14, 2024 15:00:00").getTime();
     console.log();
 
     interval = setInterval(() => {
@@ -228,7 +228,7 @@ const WebComponent = () => {
         <div className="text-center text-lg max-sm:text-[0.8rem] mt-3 text-white">
           <p>
             Total supply:{" "}
-            <span className="text-[#e2c67a]">1,000,000,000 $SEIV</span>
+            <span className="text-[#e2c67a]">100,000,000,000 $SEIV</span>
           </p>
           <p>0 Taxes</p>
         </div>

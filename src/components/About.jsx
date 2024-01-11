@@ -1,6 +1,13 @@
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Logo from "../assets/Seiviour.svg";
 import Dinner from "../assets/Dinner.jpeg";
+import John from "../assets/John.jpeg";
+import Philip from "../assets/Phillip.jpeg";
+import Judas from "../assets/Judas.jpeg";
+import Peter from "../assets/Peter.jpeg";
+import James from "../assets/James.jpeg";
+import Thomas from "../assets/Thomas.jpeg";
+import Andrew from "../assets/Andrew.jpeg";
 
 const About = () => {
   return (
@@ -15,11 +22,11 @@ const About = () => {
                 alt="Seiviour logo"
                 className="w-[60px] max-sm:w-[40px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
               ></img>
-              </a>
-              <a href="https://seiviour.xyz" className="bg-inherit ">
-            <h1 className="bg-inherit text-white text-4xl max-sm:text-3xl px-2">
-              SEIviour
-            </h1>
+            </a>
+            <a href="https://seiviour.xyz" className="bg-inherit ">
+              <h1 className="bg-inherit text-white text-4xl max-sm:text-3xl px-2">
+                SEIviour
+              </h1>
             </a>
           </div>
           <div className="flex gap-16 bg-inherit max-sm:hidden">
@@ -95,7 +102,14 @@ const About = () => {
                   The Scripture ✝️
                 </h2>
                 <p className="p-3">
-                  Just as you may know already we have Community leads and
+                  Seiv yourself the stress this project doesn't deserve you 😐
+                  this is a big JOKE 😑 If in anyway characters you find in this
+                  project coincidentally has some resemblance with characters
+                  you know in real life, we advice 🙏 please seek Medical help
+                  🧑‍⚕
+                </p>
+                <p className="p-3">
+                  Just as you may know already, we have Community leads and
                   project heads  in our presence who are indeed anonymous, but I
                   thought it well to probably give you a background history of
                   who they are, I would have shared their house address but
@@ -106,7 +120,12 @@ const About = () => {
               </div>
 
               <div className="text-center w-[65%] max-sm:w-[85%] mx-auto m-10 bg-gradient-to-t from-yellow-700 rounded-xl shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <div className="flex justify-center items-center underline">
+                <div className="flex-row justify-center underline">
+                  <img
+                    src={John}
+                    alt="Seiviour Logo"
+                    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] mx-auto m-5 rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+                  ></img>
                   <h2 className="pl-3 text-xl max-sm:text-lg">
                     JOHN @johndoe_baptist 🌊
                   </h2>
@@ -122,7 +141,12 @@ const About = () => {
               </div>
 
               <div className="text-center w-[65%] max-sm:w-[85%] mx-auto m-10 bg-gradient-to-t from-yellow-700 rounded-xl shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <div className="flex justify-center items-center underline">
+              <div className="flex-row justify-center underline">
+                  <img
+                    src={Philip}
+                    alt="Seiviour Logo"
+                    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] mx-auto m-5 rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+                  ></img>
                   <h2 className="pl-3 text-xl max-sm:text-lg">
                     PHILIP @therealphilip 👨‍🏫
                   </h2>
@@ -138,7 +162,12 @@ const About = () => {
               </div>
 
               <div className="text-center w-[65%] max-sm:w-[85%] mx-auto m-10 bg-gradient-to-t from-yellow-700 rounded-xl shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <div className="flex justify-center items-center underline">
+              <div className="flex-row justify-center underline">
+                  <img
+                    src={Judas}
+                    alt="Seiviour Logo"
+                    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] mx-auto m-5 rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+                  ></img>
                   <h2 className="pl-3 text-xl max-sm:text-lg">
                     JUDAS @judas_IsSeiriot 🤥
                   </h2>
@@ -155,7 +184,12 @@ const About = () => {
               </div>
 
               <div className="text-center w-[65%] max-sm:w-[85%] mx-auto m-10 bg-gradient-to-t from-yellow-700 rounded-xl shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <div className="flex justify-center items-center underline">
+              <div className="flex-row justify-center underline">
+                  <img
+                    src={Peter}
+                    alt="Seiviour Logo"
+                    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] mx-auto m-5 rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+                  ></img>
                   <h2 className="pl-3 text-xl max-sm:text-lg">
                     PETER @Peterfisherman 🧑‍💻
                   </h2>
@@ -172,7 +206,12 @@ const About = () => {
               </div>
 
               <div className="text-center w-[65%] max-sm:w-[85%] mx-auto m-10 bg-gradient-to-t from-yellow-700 rounded-xl shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <div className="flex justify-center items-center underline">
+              <div className="flex-row justify-center underline">
+                  <img
+                    src={James}
+                    alt="Seiviour Logo"
+                    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] mx-auto m-5 rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+                  ></img>
                   <h2 className="pl-3 text-xl max-sm:text-lg">
                     JAMES @Jameseii 👨‍💼
                   </h2>
@@ -188,7 +227,12 @@ const About = () => {
               </div>
 
               <div className="text-center w-[65%] max-sm:w-[85%] mx-auto m-10 bg-gradient-to-t from-yellow-700 rounded-xl shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <div className="flex justify-center">
+              <div className="flex-row justify-center underline">
+                  <img
+                    src={Thomas}
+                    alt="Seiviour Logo"
+                    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] mx-auto m-5 rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+                  ></img>
                   <h2 className="pl-3 text-xl max-sm:text-lg underline">
                     Thomas @Doubtiin_Thomas 📊
                   </h2>
@@ -203,7 +247,12 @@ const About = () => {
               </div>
 
               <div className="text-center w-[65%] max-sm:w-[85%] mx-auto m-10 bg-gradient-to-t from-yellow-700 rounded-xl shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <div className="flex justify-center">
+              <div className="flex-row justify-center underline">
+                  <img
+                    src={Andrew}
+                    alt="Seiviour Logo"
+                    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] mx-auto m-5 rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+                  ></img>
                   <h2 className="pl-3 text-xl max-sm:text-lg underline">
                     ANDREW @Andrew_SEI 🤔
                   </h2>
