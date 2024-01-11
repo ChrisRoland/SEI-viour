@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Logo from "../assets/Seiviour.svg";
 import Badge from "../assets/bbb.jpeg";
 
@@ -77,14 +78,23 @@ const WebComponent = () => {
               alt="Seiviour logo"
               className="w-[60px] max-sm:w-[40px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
             ></img>
-            <h1 className="bg-inherit text-white text-4xl max-sm:text-3xl px-2">SEIviour</h1>
+            <h1 className="bg-inherit text-white text-4xl max-sm:text-3xl px-2">
+              SEIviour
+            </h1>
           </div>
           <div className="flex gap-16 bg-inherit max-sm:hidden">
-            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[200px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <a href="#links" className="bg-inherit ">
-                Buy
-              </a>
-            </div>
+            <ScrollLink
+              to="links"
+              smooth={true}
+              duration={500}
+              className="bg-inherit"
+            >
+              <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[200px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+                <a href="" className="bg-inherit">
+                  Buy
+                </a>
+              </div>
+            </ScrollLink>
             {/* <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
               <a href="/register" className="bg-inherit ">
                 Airdrop
@@ -221,47 +231,55 @@ const WebComponent = () => {
         <div className="flex-row justify-center">
           <h2 className="text-2xl max-sm:text-xl m-2">Contract</h2>
           <div className="flex justify-center">
-          <div className="contra bg-black border border-yellow-100 rounded-xl w-fit shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-            <input
-              type="text"
-              name="contract"
-              id="contract"
-              readonly=""
-              aria-readonly="true"
-              className="p-3 rounded-xl focus:outline-none text-center"
-              value="factory/sei1pjdffrn4t4g3wc646l6rxfy5mrrgd6lzj4kdtj/SEIV"
-            ></input>
-            <button
-              type="button"
-              className="mr-2"
-              title={isCopied ? "Copied!" : "Copy contract address"}
-              onClick={copyToClipboard}
-            >
-            {isCopied ? "Copied!" : (
-              <svg
-                width="14"
-                height="16"
-                viewBox="0 0 14 16"
-                fill="white"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="contra bg-black border border-yellow-100 rounded-xl w-fit shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <input
+                type="text"
+                name="contract"
+                id="contract"
+                readonly=""
+                aria-readonly="true"
+                className="p-3 rounded-xl focus:outline-none text-center"
+                value="factory/sei1pjdffrn4t4g3wc646l6rxfy5mrrgd6lzj4kdtj/SEIV"
+              ></input>
+              <button
+                type="button"
+                className="mr-2"
+                title={isCopied ? "Copied!" : "Copy contract address"}
+                onClick={copyToClipboard}
               >
-              <path data-name="layer1" d="M53.443 32A26.002 26.002 0 1 1 27.75 10a25.914 25.914 0 0 1 10 1.993"
-              fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
-              stroke-linecap="round"></path>
-              </svg>
-              
-            )}
-              <svg
-                width="14"
-                height="16"
-                viewBox="0 0 14 16"
-                fill="white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M13.5312 2.0625L11.9375 0.46875C11.6875 0.21875 11.2188 0 10.875 0H5.5C4.65625 0 4 0.6875 4 1.5V3H1.5C0.65625 3 0 3.6875 0 4.5V14.5C0 15.3438 0.65625 16 1.5 16H8.5C9.3125 16 10 15.3438 10 14.5V13H12.5C13.3125 13 14 12.3438 14 11.5V3.125C14 2.78125 13.7812 2.3125 13.5312 2.0625ZM8.3125 14.5H1.6875C1.5625 14.5 1.5 14.4375 1.5 14.3125V4.6875C1.5 4.59375 1.5625 4.5 1.6875 4.5H4V11.5C4 12.3438 4.65625 13 5.5 13H8.5V14.3125C8.5 14.4375 8.40625 14.5 8.3125 14.5ZM12.3125 11.5H5.6875C5.5625 11.5 5.5 11.4375 5.5 11.3125V1.6875C5.5 1.59375 5.5625 1.5 5.6875 1.5H9V4.25C9 4.6875 9.3125 5 9.75 5H12.5V11.3125C12.5 11.4375 12.4062 11.5 12.3125 11.5ZM12.5 3.5H10.5V1.5H10.7812C10.8438 1.5 10.875 1.53125 10.9062 1.5625L12.4375 3.09375C12.4688 3.125 12.5 3.15625 12.5 3.21875V3.5Z"></path>
-              </svg>
-            </button>
-          </div>
+                {isCopied ? (
+                  "Copied!"
+                ) : (
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      data-name="layer1"
+                      d="M53.443 32A26.002 26.002 0 1 1 27.75 10a25.914 25.914 0 0 1 10 1.993"
+                      fill="none"
+                      stroke="#202020"
+                      stroke-miterlimit="10"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                )}
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M13.5312 2.0625L11.9375 0.46875C11.6875 0.21875 11.2188 0 10.875 0H5.5C4.65625 0 4 0.6875 4 1.5V3H1.5C0.65625 3 0 3.6875 0 4.5V14.5C0 15.3438 0.65625 16 1.5 16H8.5C9.3125 16 10 15.3438 10 14.5V13H12.5C13.3125 13 14 12.3438 14 11.5V3.125C14 2.78125 13.7812 2.3125 13.5312 2.0625ZM8.3125 14.5H1.6875C1.5625 14.5 1.5 14.4375 1.5 14.3125V4.6875C1.5 4.59375 1.5625 4.5 1.6875 4.5H4V11.5C4 12.3438 4.65625 13 5.5 13H8.5V14.3125C8.5 14.4375 8.40625 14.5 8.3125 14.5ZM12.3125 11.5H5.6875C5.5625 11.5 5.5 11.4375 5.5 11.3125V1.6875C5.5 1.59375 5.5625 1.5 5.6875 1.5H9V4.25C9 4.6875 9.3125 5 9.75 5H12.5V11.3125C12.5 11.4375 12.4062 11.5 12.3125 11.5ZM12.5 3.5H10.5V1.5H10.7812C10.8438 1.5 10.875 1.53125 10.9062 1.5625L12.4375 3.09375C12.4688 3.125 12.5 3.15625 12.5 3.21875V3.5Z"></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -269,34 +287,34 @@ const WebComponent = () => {
       {/*Buy Links */}
       <div id="links" className="text-center m-10">
         <div className="flex justify-center">
-        <div className="w-[75%] max-sm:w-[90%] grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
-            href="https://dojo.trading/swap"
-          >
-            Buy on Dojo
-          </a>
+          <div className="w-[75%] max-sm:w-[90%] grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+              href="https://dojo.trading/swap"
+            >
+              Buy on Dojo
+            </a>
 
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
-            href="https://app.astroport.fi/swap"
-          >
-            Buy on Astroport
-          </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+              href="https://app.astroport.fi/swap"
+            >
+              Buy on Astroport
+            </a>
 
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
-            href="https://coinhall.org"
-          >
-            Buy on Coin Hall
-          </a>
-        </div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
+              href="https://coinhall.org"
+            >
+              Buy on Coin Hall
+            </a>
+          </div>
         </div>
         <div className="flex justify-center text-yellow-100 pt-5 m-3">
           <a
