@@ -11,7 +11,7 @@ const WebComponent = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countDownDate = new Date("Jan 16, 2024 00:00:00").getTime();
+    const countDownDate = new Date("Jan 16, 2024 11:40:00").getTime();
     console.log();
 
     interval = setInterval(() => {
@@ -80,12 +80,12 @@ const WebComponent = () => {
             <h1 className="bg-inherit text-white text-4xl max-sm:text-3xl px-2">SEIviour</h1>
           </div>
           <div className="flex gap-16 bg-inherit max-sm:hidden">
-            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <a href="/register" className="bg-inherit ">
+            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[200px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <a href="#links" className="bg-inherit ">
                 Buy
               </a>
             </div>
-            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+            {/* <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
               <a href="/register" className="bg-inherit ">
                 Airdrop
               </a>
@@ -94,7 +94,7 @@ const WebComponent = () => {
               <a href="/register" className="bg-inherit ">
                 NFTS
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
@@ -110,12 +110,12 @@ const WebComponent = () => {
             ></img>
           </div>
           <div className="flex justify-center mt-5 gap-3 bg-inherit lg:hidden">
-            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[70px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <a href="/register" className="bg-inherit ">
+            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+              <a href="#links" className="bg-inherit ">
                 Buy
               </a>
             </div>
-            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[95px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+            {/* <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[95px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
               <a href="/register" className="bg-inherit ">
                 Airdrop
               </a>
@@ -124,7 +124,7 @@ const WebComponent = () => {
               <a href="/register" className="bg-inherit ">
                 NFTS
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="flex justify-center m-5">
             <p className="w-[55%] max-sm:w-auto max-sm:px-2 text-white text-xl max-sm:text-lg text-center font-bold tracking-wide leading-7 ">
@@ -157,8 +157,8 @@ const WebComponent = () => {
       <div className="w-[70%] max-sm:w-[90%] border-[1px] border-yellow-100 rounded-[12px] m-[0px_auto_40px_auto] p-[20px]">
         <div className="flex justify-center bg-gradient-to-b from-red-600 to-yellow-300 shadow-[0px_4px_4px_rgba(0, 0, 0, 0.25)] shadow-black rounded-[20px]">
           <div className="trans w-[60%] p-[30px] max-sm:w-[80%] max-sm:px-[0px] text-white">
-            <p className="font-semibold text-2xl leading-8 text-center mb-2">
-              Presale Starts in
+            <p className="font-semibold text-2xl max-sm:text-xl leading-8 text-center mb-4">
+              Thanksgiving Offering Starts in...
             </p>
             <div className="flex text-white justify-between">
               <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
@@ -207,12 +207,12 @@ const WebComponent = () => {
           </div>
         </div>
 
-        <div className="text-center text-lg max-sm:text-[0.8rem] m-5 text-white">
+        <div className="text-center text-lg max-sm:text-[0.8rem] mt-3 text-white">
           <p>
             Total supply:{" "}
-            <span className="text-[#e2c67a]">1,000,000,000 SEIV</span>
+            <span className="text-[#e2c67a]">1,000,000,000 $SEIV</span>
           </p>
-          <p>0 Taxes, 0 Team Allocation, 0 Presale, 0 BS</p>
+          <p>0 Taxes</p>
         </div>
       </div>
 
@@ -220,19 +220,20 @@ const WebComponent = () => {
       <div className="text-center text-white m-7">
         <div className="flex-row justify-center">
           <h2 className="text-2xl max-sm:text-xl m-2">Contract</h2>
-          <div className="contra bg-black border border-yellow-100 rounded-xl mx-[500px] max-sm:mx-[20px] shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+          <div className="flex justify-center">
+          <div className="contra bg-black border border-yellow-100 rounded-xl w-fit shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
             <input
               type="text"
               name="contract"
               id="contract"
               readonly=""
               aria-readonly="true"
-              className="p-3 focus:outline-none text-center"
-              value="factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/seiviour"
+              className="p-3 rounded-xl focus:outline-none text-center"
+              value="factory/sei1pjdffrn4t4g3wc646l6rxfy5mrrgd6lzj4kdtj/SEIV"
             ></input>
             <button
               type="button"
-              className=""
+              className="mr-2"
               title={isCopied ? "Copied!" : "Copy contract address"}
               onClick={copyToClipboard}
             >
@@ -261,12 +262,14 @@ const WebComponent = () => {
               </svg>
             </button>
           </div>
+          </div>
         </div>
       </div>
 
       {/*Buy Links */}
-      <div className="text-center m-10">
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div id="links" className="text-center m-10">
+        <div className="flex justify-center">
+        <div className="w-[75%] max-sm:w-[90%] grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <a
             target="_blank"
             rel="noreferrer"
@@ -294,7 +297,7 @@ const WebComponent = () => {
             Buy on Coin Hall
           </a>
         </div>
-
+        </div>
         <div className="flex justify-center text-yellow-100 pt-5 m-3">
           <a
             className="px-3"
