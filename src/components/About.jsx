@@ -1,7 +1,5 @@
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Logo from "../assets/Seiviour.svg";
-import John from "../assets/John.png";
-import Badge from "../assets/bbb.jpeg";
 import Dinner from "../assets/Dinner.jpeg";
 
 const About = () => {
