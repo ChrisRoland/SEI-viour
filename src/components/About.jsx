@@ -280,7 +280,7 @@ const About = () => {
         {/*Buy Links */}
         <div id="links" className="text-center m-10">
           <div className="flex justify-center">
-            <div className="w-[75%] max-sm:w-[90%] grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="w-[75%] max-sm:w-[90%] flex max-sm:flex-col justify-center">
               {/* <a
                 target="_blank"
                 rel="noreferrer"
