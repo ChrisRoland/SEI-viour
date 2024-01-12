@@ -190,11 +190,14 @@ const WebComponent = () => {
       </div>
 
       {/*countdown*/}
-      <div className="w-[70%] max-sm:w-[90%] border-[1px] border-yellow-100 rounded-[12px] m-[0px_auto_40px_auto] p-[20px]">
-        <div className="flex justify-center bg-gradient-to-b from-red-600 to-yellow-500 shadow-[0px_4px_4px_rgba(0, 0, 0, 0.25)] shadow-black rounded-[20px]">
+      <div className="w-[70%] max-sm:w-[90%] border-[1px] border-yellow-100 rounded-[12px] m-[0px_auto_40px_auto] p-[20px] max-sm:p-[10px]">
+        <div className="flex justify-center w-auto bg-gradient-to-b from-red-600 to-yellow-500 shadow-[0px_4px_4px_rgba(0, 0, 0, 0.25)] shadow-black rounded-[20px]">
           <div className="trans w-[60%] p-[30px] max-sm:w-[80%] max-sm:px-[0px] text-white">
             <p className="font-semibold text-2xl max-sm:text-xl leading-8 text-center mb-4">
               Thanksgiving Offering is ongoing now!
+            </p>
+            <p className="font-semibold text-xl max-sm:text-lg leading-8 text-center mb-4">
+              Presale last for 3 days or if we hit our hard cap of 44, 000 Sei
             </p>
             {/* <div className="flex text-white justify-between">
               <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
@@ -242,60 +245,64 @@ const WebComponent = () => {
             </div> */}
             <div className="flex text-white justify-between">
               <div className="text-lg mx-auto text-center">
-                <h2 className="">
-                  Address:
-                </h2>
+                <h2 className="">Address:</h2>
                 <div className="contra bg-black border border-yellow-100 rounded-xl w-fit mb-5 shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <input
-                type="text"
-                name="contrac"
-                id="contrac"
-                readonly=""
-                aria-readonly="true"
-                className="p-3 rounded-xl focus:outline-none text-center"
-                value="sei1pjdffrn4t4g3wc646l6rxfy5mrrgd6lzj4kdtj"
-              ></input>
-              <button
-                type="button"
-                className="mr-2"
-                title={isCop? "Copied!" : "Copy contract address"}
-                onClick={copyToClip}
-              >
-                {isCop ? (
-                  "Copied!"
-                ) : (
-                  <svg
-                    width="14"
-                    height="16"
-                    viewBox="0 0 14 16"
-                    fill="white"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <input
+                    type="text"
+                    name="contrac"
+                    id="contrac"
+                    readonly=""
+                    aria-readonly="true"
+                    className="p-3 rounded-xl focus:outline-none text-center"
+                    value="sei1pjdffrn4t4g3wc646l6rxfy5mrrgd6lzj4kdtj"
+                  ></input>
+                  <button
+                    type="button"
+                    className="mr-2"
+                    title={isCop ? "Copied!" : "Copy contract address"}
+                    onClick={copyToClip}
                   >
-                    <path
-                      data-name="layer1"
-                      d="M53.443 32A26.002 26.002 0 1 1 27.75 10a25.914 25.914 0 0 1 10 1.993"
-                      fill="none"
-                      stroke="#202020"
-                      stroke-miterlimit="10"
-                      stroke-width="2"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    ></path>
-                  </svg>
-                )}
-                <svg
-                  width="14"
-                  height="16"
-                  viewBox="0 0 14 16"
-                  fill="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M13.5312 2.0625L11.9375 0.46875C11.6875 0.21875 11.2188 0 10.875 0H5.5C4.65625 0 4 0.6875 4 1.5V3H1.5C0.65625 3 0 3.6875 0 4.5V14.5C0 15.3438 0.65625 16 1.5 16H8.5C9.3125 16 10 15.3438 10 14.5V13H12.5C13.3125 13 14 12.3438 14 11.5V3.125C14 2.78125 13.7812 2.3125 13.5312 2.0625ZM8.3125 14.5H1.6875C1.5625 14.5 1.5 14.4375 1.5 14.3125V4.6875C1.5 4.59375 1.5625 4.5 1.6875 4.5H4V11.5C4 12.3438 4.65625 13 5.5 13H8.5V14.3125C8.5 14.4375 8.40625 14.5 8.3125 14.5ZM12.3125 11.5H5.6875C5.5625 11.5 5.5 11.4375 5.5 11.3125V1.6875C5.5 1.59375 5.5625 1.5 5.6875 1.5H9V4.25C9 4.6875 9.3125 5 9.75 5H12.5V11.3125C12.5 11.4375 12.4062 11.5 12.3125 11.5ZM12.5 3.5H10.5V1.5H10.7812C10.8438 1.5 10.875 1.53125 10.9062 1.5625L12.4375 3.09375C12.4688 3.125 12.5 3.15625 12.5 3.21875V3.5Z"></path>
-                </svg>
-              </button>
-            </div>
-                <p>Min Buy: 74 SEI </p>
-                <p>Max Buy: 740 SEI </p>
+                    {isCop ? (
+                      "Copied!"
+                    ) : (
+                      <svg
+                        width="14"
+                        height="16"
+                        viewBox="0 0 14 16"
+                        fill="white"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          data-name="layer1"
+                          d="M53.443 32A26.002 26.002 0 1 1 27.75 10a25.914 25.914 0 0 1 10 1.993"
+                          fill="none"
+                          stroke="#202020"
+                          stroke-miterlimit="10"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    )}
+                    <svg
+                      width="14"
+                      height="16"
+                      viewBox="0 0 14 16"
+                      fill="white"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M13.5312 2.0625L11.9375 0.46875C11.6875 0.21875 11.2188 0 10.875 0H5.5C4.65625 0 4 0.6875 4 1.5V3H1.5C0.65625 3 0 3.6875 0 4.5V14.5C0 15.3438 0.65625 16 1.5 16H8.5C9.3125 16 10 15.3438 10 14.5V13H12.5C13.3125 13 14 12.3438 14 11.5V3.125C14 2.78125 13.7812 2.3125 13.5312 2.0625ZM8.3125 14.5H1.6875C1.5625 14.5 1.5 14.4375 1.5 14.3125V4.6875C1.5 4.59375 1.5625 4.5 1.6875 4.5H4V11.5C4 12.3438 4.65625 13 5.5 13H8.5V14.3125C8.5 14.4375 8.40625 14.5 8.3125 14.5ZM12.3125 11.5H5.6875C5.5625 11.5 5.5 11.4375 5.5 11.3125V1.6875C5.5 1.59375 5.5625 1.5 5.6875 1.5H9V4.25C9 4.6875 9.3125 5 9.75 5H12.5V11.3125C12.5 11.4375 12.4062 11.5 12.3125 11.5ZM12.5 3.5H10.5V1.5H10.7812C10.8438 1.5 10.875 1.53125 10.9062 1.5625L12.4375 3.09375C12.4688 3.125 12.5 3.15625 12.5 3.21875V3.5Z"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div className="m-1">
+                  <p>Min Buy: 74 SEI </p>
+                  <p>Max Buy: 740 SEI </p>
+                </div>
+                <div className="m-1">
+                  <p>Soft Cap: 29,000 SEI </p>
+                  <p>Hard Cap: 44,000 SEI </p>
+                </div>
               </div>
             </div>
           </div>
