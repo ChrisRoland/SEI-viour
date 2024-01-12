@@ -309,7 +309,7 @@ const WebComponent = () => {
               target="_blank"
               rel="noreferrer"
               className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
-              href=""
+              href="https://twitter.com/Seiviour_/status/1745807204563759412?t=kizKhwVsv9bkapRDnxPmxg&s=19"
             >
               Buy on Binance
             </a>
