@@ -281,14 +281,14 @@ const About = () => {
         <div id="links" className="text-center m-10">
           <div className="flex justify-center">
             <div className="w-[75%] max-sm:w-[90%] grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <a
+              {/* <a
                 target="_blank"
                 rel="noreferrer"
                 className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
                 href="https://dojo.trading/swap"
               >
                 Buy on Dojo
-              </a>
+              </a> */}
 
               <a
                 target="_blank"
