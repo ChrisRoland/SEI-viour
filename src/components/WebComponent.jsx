@@ -13,7 +13,7 @@ const WebComponent = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countDownDate = new Date("Jan 14, 2024 15:00:00").getTime();
+    const countDownDate = new Date("Jan 16, 2024 12:00:00").getTime();
     console.log();
 
     interval = setInterval(() => {
@@ -197,9 +197,9 @@ const WebComponent = () => {
               Thanksgiving Offering is ongoing now!
             </p>
             <p className="font-semibold text-xl max-sm:text-lg leading-8 text-center mb-4">
-              Presale last for 3 days or if we hit our hard cap of 44, 000 Sei
+              Presale lasts for 3 days or if we hit our hard cap of 44, 000 Sei
             </p>
-            {/* <div className="flex text-white justify-between">
+            <div className="flex text-white justify-between m-5">
               <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
                 <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerDays}
@@ -242,7 +242,7 @@ const WebComponent = () => {
                 </p>
                 <p className="max-sm:text-xs">secs</p>
               </div>
-            </div> */}
+            </div>
             <div className="flex text-white justify-between">
               <div className="text-lg mx-auto text-center">
                 <h2 className="">Address:</h2>
