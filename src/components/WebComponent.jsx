@@ -192,7 +192,7 @@ const WebComponent = () => {
       {/*countdown*/}
       <div className="w-[70%] max-sm:w-[90%] border-[1px] border-yellow-100 rounded-[12px] m-[0px_auto_40px_auto] p-[20px] max-sm:p-[10px]">
         <div className="flex justify-center w-auto bg-gradient-to-b from-red-600 to-yellow-500 shadow-[0px_4px_4px_rgba(0, 0, 0, 0.25)] shadow-black rounded-[20px]">
-          <div className="trans w-[60%] p-[30px] max-sm:w-[80%] max-sm:px-[0px] text-white">
+          <div id="links" className="trans w-[60%] p-[30px] max-sm:w-[80%] max-sm:px-[0px] text-white">
             <p className="font-semibold text-2xl max-sm:text-xl leading-8 text-center mb-4">
               Thanksgiving Offering is ongoing now!
             </p>
@@ -376,7 +376,7 @@ const WebComponent = () => {
       </div>
 
       {/*Buy Links */}
-      <div id="links" className="text-center m-10">
+      <div className="text-center m-10">
         <div className="flex justify-center">
           <div className="w-[75%] max-sm:w-[90%] flex max-sm:flex-col justify-center">
             {/* <a
@@ -388,7 +388,7 @@ const WebComponent = () => {
               Buy on UniSwap
             </a> */}
 
-            <a
+            {/* <a
               target="_blank"
               rel="noreferrer"
               className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
@@ -413,7 +413,7 @@ const WebComponent = () => {
               href="https://coinhall.org"
             >
               Buy on Coin Hall
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="flex justify-center text-yellow-100 pt-5 m-3">
