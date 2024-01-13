@@ -379,14 +379,14 @@ const WebComponent = () => {
       <div id="links" className="text-center m-10">
         <div className="flex justify-center">
           <div className="w-[75%] max-sm:w-[90%] flex max-sm:flex-col justify-center">
-            <a
+            {/* <a
               target="_blank"
               rel="noreferrer"
               className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
               href="https://app.uniswap.org/swap"
             >
               Buy on UniSwap
-            </a>
+            </a> */}
 
             <a
               target="_blank"
