@@ -303,6 +303,12 @@ const WebComponent = () => {
                   <p>Soft Cap: 29,000 SEI </p>
                   <p>Hard Cap: 44,000 SEI </p>
                 </div>
+                <div>
+                <p
+                className="border border-black rounded-xl p-1 m-2 bg-yellow-300 text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
+                7.15% done 
+              </p>
+                </div>
               </div>
             </div>
           </div>
