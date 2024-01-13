@@ -278,7 +278,7 @@ const About = () => {
         </div>
 
         {/*Buy Links */}
-        <div id="links" className="text-center m-10">
+        <div className="text-center m-10">
           <div className="flex justify-center">
             <div className="w-[75%] max-sm:w-[90%] flex max-sm:flex-col justify-center">
               {/* <a
@@ -290,7 +290,7 @@ const About = () => {
                 Buy on UniSwap 
               </a> */}
 
-              <a
+              {/* <a
               target="_blank"
               rel="noreferrer"
               className="border border-yellow-500 rounded-xl p-2 m-2 text-[#e2c67a] hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
@@ -315,7 +315,7 @@ const About = () => {
                 href="https://coinhall.org"
               >
                 Buy on Coin Hall
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="flex justify-center text-yellow-100 pt-5 m-3">
