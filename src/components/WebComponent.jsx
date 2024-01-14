@@ -306,7 +306,7 @@ const WebComponent = () => {
                 <div>
                 <p
                 className="border border-black rounded-xl p-1 m-2 bg-yellow-300 text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                7.15% done 
+                10.84% done 
               </p>
                 </div>
               </div>
