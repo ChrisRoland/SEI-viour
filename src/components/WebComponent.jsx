@@ -13,7 +13,7 @@ const WebComponent = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countDownDate = new Date("Jan 16, 2024 12:00:00").getTime();
+    const countDownDate = new Date("Jan 16, 2024 21:00:00").getTime();
     console.log();
 
     interval = setInterval(() => {
@@ -194,11 +194,11 @@ const WebComponent = () => {
         <div className="flex justify-center w-auto bg-gradient-to-b from-red-600 to-yellow-500 shadow-[0px_4px_4px_rgba(0, 0, 0, 0.25)] shadow-black rounded-[20px]">
           <div id="links" className="trans w-[60%] p-[30px] max-sm:w-[80%] max-sm:px-[0px] text-white">
             <p className="font-semibold text-2xl max-sm:text-xl leading-8 text-center mb-4">
-              Thanksgiving Offering is ongoing now!
+              SEIviour Token Launches in!
             </p>
-            <p className="font-semibold text-xl max-sm:text-lg leading-8 text-center mb-4">
+            {/* <p className="font-semibold text-xl max-sm:text-lg leading-8 text-center mb-4">
               Presale lasts for 3 days or if we hit our hard cap of 44, 000 Sei
-            </p>
+            </p> */}
             <div className="flex text-white justify-between m-5">
               <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
                 <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
