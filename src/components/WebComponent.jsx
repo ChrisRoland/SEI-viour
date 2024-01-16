@@ -324,7 +324,7 @@ const WebComponent = () => {
       </div>
 
       {/*Contract*/}
-      <div className="text-center text-white m-7">
+      {/* <div className="text-center text-white m-7">
         <div className="flex-row justify-center">
           <h2 className="text-2xl max-sm:text-xl m-2">Contract</h2>
           <div className="flex justify-center">
@@ -379,7 +379,7 @@ const WebComponent = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/*Buy Links */}
       <div className="text-center m-10">
