@@ -193,13 +193,13 @@ const WebComponent = () => {
       <div className="w-[70%] max-sm:w-[90%] border-[1px] border-yellow-100 rounded-[12px] m-[0px_auto_40px_auto] p-[20px] max-sm:p-[10px]">
         <div className="flex justify-center w-auto bg-gradient-to-b from-red-600 to-yellow-500 shadow-[0px_4px_4px_rgba(0, 0, 0, 0.25)] shadow-black rounded-[20px]">
           <div id="links" className="trans w-[60%] p-[30px] max-sm:w-[80%] max-sm:px-[0px] text-white">
-            <p className="font-semibold text-2xl max-sm:text-xl leading-8 text-center mb-4">
-              SEIviour Token Launches in!
+            <p className="font-semibold text-4xl max-sm:text-xl leading-8 text-center mb-4">
+              WE'RE LIVE!!!
             </p>
             {/* <p className="font-semibold text-xl max-sm:text-lg leading-8 text-center mb-4">
               Presale lasts for 3 days or if we hit our hard cap of 44, 000 Sei
             </p> */}
-            <div className="flex text-white justify-between m-5">
+            {/* <div className="flex text-white justify-between m-5">
               <div className="border-[1px] border-white rounded w-[20%] max-sm:w-[40%] max-sm:p-1 text-center">
                 <p className="font-semibold text-[30px] max-sm:text-[25px] text-center m-[2px]">
                   {timerDays}
@@ -242,7 +242,7 @@ const WebComponent = () => {
                 </p>
                 <p className="max-sm:text-xs">secs</p>
               </div>
-            </div>
+            </div> */}
             {/*  <div className="flex text-white justify-between">
               <div className="text-lg mx-auto text-center">
                 <h2 className="">Address:</h2>
