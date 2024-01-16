@@ -243,7 +243,7 @@ const WebComponent = () => {
                 <p className="max-sm:text-xs">secs</p>
               </div>
             </div>
-            <div className="flex text-white justify-between">
+            {/*  <div className="flex text-white justify-between">
               <div className="text-lg mx-auto text-center">
                 <h2 className="">Address:</h2>
                 <div className="contra bg-black border border-yellow-100 rounded-xl w-fit mb-5 shadow-[0_2px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
@@ -310,7 +310,7 @@ const WebComponent = () => {
               </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
