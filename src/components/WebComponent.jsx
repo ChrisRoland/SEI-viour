@@ -12,7 +12,7 @@ const WebComponent = () => {
 
   let interval = useRef();
 
-  const startTimer = () => {
+  const startTimer = () => { 
     const countDownDate = new Date("Jan 16, 2024 21:00:00").getTime();
     console.log();
 
